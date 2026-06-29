@@ -40,7 +40,7 @@ jobs:
           go list -m -json github.com/Dynatrace/dt-otelcol-edge-processing-components/receiver/dtedgeprocessingreceiver@latest
 
       - name: Install OCB
-        run: go install go.opentelemetry.io/collector/cmd/builder@${{ env.OCB_VERSION }}
+        run: make install-ocb
 
       - name: Build collector
-        run: make agent
+        run: make build-linux-amd64
