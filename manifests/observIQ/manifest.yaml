@@ -129,6 +129,7 @@ processors:
   - gomod: github.com/observiq/bindplane-otel-collector/internal/processor/snapshotprocessor v1.102.0
 
 receivers:
+  - gomod: github.com/Dynatrace/dt-otelcol-edge-processing-components/receiver/dtedgeprocessingreceiver v0.0.0-20260623104819-9aa0ebede098
   - gomod: go.opentelemetry.io/collector/receiver/nopreceiver v0.154.0
   - gomod: go.opentelemetry.io/collector/receiver/otlpreceiver v0.154.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/activedirectorydsreceiver v0.154.0
